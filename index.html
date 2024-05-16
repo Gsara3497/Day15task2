@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Manipulation with Form</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">DOM Manipulation with Form </h1>
+    <p id="description">This form allows you to input information such as first name, last name, email address, etc. Upon submission, the values are appended to the table below.</p>
+    <h2>Form</h2>
+    <form id="form">
+      <div class="form-group">
+        <label for="first-name">First Name:</label>
+        <input type="text" class="form-control" id="first-name" name="fname" placeholder="Enter your first name" required>
+      </div>
+      <div class="form-group">
+        <label for="last-name">Last Name:</label>
+        <input type="text" class="form-control" id="last-name" name="lname" placeholder="Enter your last name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <textarea  type="address" class="form-control" id="address" name="address" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="pincode">Pincode:</label>
+        <input type="text" class="form-control" id="pincode" name="pincode" required>
+      </div>
+      <div class="form-group">
+          <label for="gender">Gender:</label><br>
+          <input type="radio" id="male" name="gender" value="male" required>
+          <label for="male">Male</label><br>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label><br>
+          <input type="radio" id="other" name="gender" value="other">
+          <label for="other">Other</label><br>
+      </div>
+      <div class="form-group">
+        <label>Choice of Food (select at least 2):</label><br>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="food1" name="food" value="chicken">
+          <label class="form-check-label" for="food1">chicken</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="food2" name="food" value="white rice">
+          <label class="form-check-label" for="food2">white rice</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="food3" name="food" value="briyani">
+          <label class="form-check-label" for="food3">briyani</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="food4" name="food" value="curd rice">
+          <label class="form-check-label" for="food4">curd rice</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="food5" name="food" value="lemon rice">
+          <label class="form-check-label" for="food5">lemon rice</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="state">State:</label>
+        <input type="text" class="form-control" id="state" name="state" required>
+      </div>
+      <div class="form-group">
+        <label for="country">Country:</label>
+        <input type="text" class="form-control" id="country" name="country" required>
+      </div>
+      <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="container">
+    <h2>Table</h2>
+    <table class="table" id="dataTable">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Address</th>
+          <th>Pincode</th>
+          <th>Gender</th>
+          <th>Food</th>
+          <th>State</th>
+          <th>Country</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+      </tbody>
+    </table>
+  </div>
+
+  <script src="./js/script.js"></script>
+  <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+</html>
