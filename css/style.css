@@ -1,0 +1,38 @@
+.container {
+    padding: 50px;
+    border: auto;
+    margin: 50px;
+    background-color: darkgray;
+    
+  }
+  
+  label {
+    display: block;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  select {
+    width: 200px;
+    padding: 10px;
+    margin: 5px 0;
+    text-align:start;
+    display: flex;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+   background-color: #4c3aec;
+  }
+  
